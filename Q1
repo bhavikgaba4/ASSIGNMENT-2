@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+   int arr[5] = {1,23,3,5,2};
+  int left = 0;
+  int x = 23 ;
+  int right = sizeof(arr)-1;
+  int mid = (left+right)/2;
+  while(left<right){
+      
+      if(arr[mid]==x){
+      cout<<arr[mid]<<endl;
+      break;
+  }
+  else if(arr[mid]>x){
+      right = mid;
+  }
+  else{
+      left = mid;
+  }
+   
+}
+    return 0;
+}

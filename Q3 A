@@ -1,0 +1,15 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+  int arr[10] = {1,2,4,5,6,7,8,9};
+  int x = 9;
+  int n = (10*(10-1))/2;
+  int sum=0;
+  for(int i = 0;i<x-1;i++){
+      sum=sum+arr[i];
+  }
+  
+  cout<<n-sum<<endl;
+    return 0;
+}

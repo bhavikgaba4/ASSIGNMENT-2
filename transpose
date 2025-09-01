@@ -1,0 +1,17 @@
+void transpose(int A[][3], int T[][3]) {
+    int m = A[0][0], n = A[0][1], nz = A[0][2];
+    T[0][0] = n;
+    T[0][1] = m;
+    T[0][2] = nz;
+    int k = 1;
+    for (int col = 0; col < n; col++) {
+        for (int i = 1; i <= nz; i++) {
+            if (A[i][1] == col + 1) {
+                T[k][0] = A[i][1];
+                T[k][1] = A[i][0];
+                T[k][2] = A[i][2];
+                k++;
+            }
+        }
+    }
+}
